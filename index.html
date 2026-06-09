@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A. Coelac - Galeria de Arte</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header class="hero">
+      <h1>Galeria de Arte Alberto Coelac</h1>
+      <p>
+        Una colección visual con artística con énfasis en lo natural y lo urbano.
+      </p>
+    </header>
+
+    <main id="contenido-principal" tabindex="-1">
+      <section class="gallery" aria-labelledby="titulo-galeria">
+        <h2 id="titulo-galeria" class="sr-only">Galeria principal de imagenes</h2>
+
+        <article class="media-item" aria-labelledby="art-title-1" aria-describedby="art-desc-1">
+          <figure class="media-image">
+            <a href="#img-1" aria-label="Expandir imagen Sendero Verde. Etiquetas: naturaleza, camino, aventura">
+              <img
+                src="https://fastly.picsum.photos/id/123/200/200.jpg?hmac=jX2gG2mQvD4DCofqgYSSHvxstlcHHBmcKy0GJiPOASc"
+                alt="Camino natural entre vegetacion"
+              />
+            </a>
+            <figcaption class="sr-only">Miniatura de Sendero Verde.</figcaption>
+          </figure>
+          <div class="media-content">
+            <h2 id="art-title-1">Sendero Verde</h2>
+            <p id="art-desc-1">
+              Una escena fresca y tranquila que transmite la sensacion de caminar
+              sin prisa por un sendero rodeado de vida y color.
+            </p>
+          </div>
+        </article>
+
+        <article class="media-item reverse" aria-labelledby="art-title-2" aria-describedby="art-desc-2">
+          <figure class="media-image">
+            <a href="#img-2" aria-label="Expandir imagen Horizonte Vivo. Etiquetas: paisaje, montanas, explorar">
+              <img
+                src="https://fastly.picsum.photos/id/253/200/200.jpg?hmac=_dceojr9yz5ZIKoye8I9HOqPCBHfn-jT9aRYdoLx1kQ"
+                alt="Paisaje de montanas y naturaleza"
+              />
+            </a>
+            <figcaption class="sr-only">Miniatura de Horizonte Vivo.</figcaption>
+          </figure>
+          <div class="media-content">
+            <h2 id="art-title-2">Horizonte Vivo</h2>
+            <p id="art-desc-2">
+              La profundidad del paisaje invita a descubrir caminos nuevos,
+              capturando una atmosfera ideal para inspirar creatividad.
+            </p>
+          </div>
+        </article>
+
+        <article class="media-item" aria-labelledby="art-title-3" aria-describedby="art-desc-3">
+          <figure class="media-image">
+            <a href="#img-3" aria-label="Expandir imagen Instante Urbano. Etiquetas: ciudad, fotografia, historia">
+              <img
+                src="https://fastly.picsum.photos/id/232/200/200.jpg?hmac=JA1KDqHA0NVCuk9eDwi1FWCxg3YbhsiO_4GZeE1ebf4"
+                alt="Escena urbana con estilo documental"
+              />
+            </a>
+            <figcaption class="sr-only">Miniatura de Instante Urbano.</figcaption>
+          </figure>
+          <div class="media-content">
+            <h2 id="art-title-3">Instante Urbano</h2>
+            <p id="art-desc-3">
+              Una composicion que refleja ritmo y detalle, perfecta para mostrar
+              el caracter unico de un momento en la ciudad.
+            </p>
+          </div>
+        </article>
+
+        <article class="media-item reverse" aria-labelledby="art-title-4" aria-describedby="art-desc-4">
+          <figure class="media-image">
+            <a href="#img-4" aria-label="Expandir imagen Reflejo Sereno. Etiquetas: agua, naturaleza, calma">
+              <img
+                src="https://fastly.picsum.photos/id/430/200/200.jpg?hmac=RbYQ27bVLRKt5ScfTYiQ_ePoVdo70X4eWg2KPc6JF0I"
+                alt="Paisaje natural junto al agua"
+              />
+            </a>
+            <figcaption class="sr-only">Miniatura de Reflejo Sereno.</figcaption>
+          </figure>
+          <div class="media-content">
+            <h2 id="art-title-4">Reflejo Sereno</h2>
+            <p id="art-desc-4">
+              La luz y los tonos suaves generan una sensacion relajante, ideal
+              para representar equilibrio y paz visual.
+            </p>
+          </div>
+        </article>
+
+        <article class="media-item" aria-labelledby="art-title-5" aria-describedby="art-desc-5">
+          <figure class="media-image">
+            <a href="#img-5" aria-label="Expandir imagen Contraste Creativo. Etiquetas: arte, textura, inspiracion">
+              <img
+                src="https://fastly.picsum.photos/id/998/200/200.jpg?hmac=Vc80YaPx9n6ZScRmWn3BK9EpGBVjYYCDlXpsZfYCOPw"
+                alt="Escena artistica de alto contraste"
+              />
+            </a>
+            <figcaption class="sr-only">Miniatura de Contraste Creativo.</figcaption>
+          </figure>
+          <div class="media-content">
+            <h2 id="art-title-5">Contraste Creativo</h2>
+            <p id="art-desc-5">
+              Una imagen con fuerza visual que destaca por su contraste y su
+              estilo expresivo, ideal para cerrar la galeria con personalidad.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="lightboxes" aria-label="Visor de imagenes expandibles">
+        <article id="img-1" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="art-title-1" aria-describedby="art-desc-1">
+          <a class="overlay-close" href="#" aria-label="Cerrar imagen ampliada"></a>
+          <div class="lightbox-content">
+            <img
+              src="https://picsum.photos/id/123/1200/1200"
+              alt="Camino natural entre vegetacion ampliado"
+            />
+            <a class="close-btn" href="#" aria-label="Cerrar">Cerrar</a>
+          </div>
+        </article>
+
+        <article id="img-2" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="art-title-2" aria-describedby="art-desc-2">
+          <a class="overlay-close" href="#" aria-label="Cerrar imagen ampliada"></a>
+          <div class="lightbox-content">
+            <img
+              src="https://picsum.photos/id/253/1200/1200"
+              alt="Paisaje de montanas y naturaleza ampliado"
+            />
+            <a class="close-btn" href="#" aria-label="Cerrar">Cerrar</a>
+          </div>
+        </article>
+
+        <article id="img-3" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="art-title-3" aria-describedby="art-desc-3">
+          <a class="overlay-close" href="#" aria-label="Cerrar imagen ampliada"></a>
+          <div class="lightbox-content">
+            <img
+              src="https://picsum.photos/id/232/1200/1200"
+              alt="Escena urbana con estilo documental ampliado"
+            />
+            <a class="close-btn" href="#" aria-label="Cerrar">Cerrar</a>
+          </div>
+        </article>
+
+        <article id="img-4" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="art-title-4" aria-describedby="art-desc-4">
+          <a class="overlay-close" href="#" aria-label="Cerrar imagen ampliada"></a>
+          <div class="lightbox-content">
+            <img
+              src="https://picsum.photos/id/430/1200/1200"
+              alt="Paisaje natural junto al agua ampliado"
+            />
+            <a class="close-btn" href="#" aria-label="Cerrar">Cerrar</a>
+          </div>
+        </article>
+
+        <article id="img-5" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="art-title-5" aria-describedby="art-desc-5">
+          <a class="overlay-close" href="#" aria-label="Cerrar imagen ampliada"></a>
+          <div class="lightbox-content">
+            <img
+              src="https://picsum.photos/id/998/1200/1200"
+              alt="Escena artistica de alto contraste ampliado"
+            />
+            <a class="close-btn" href="#" aria-label="Cerrar">Cerrar</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Agradecimientos al autor: A. Coelac.</p>
+    </footer>
+  </body>
+</html>
