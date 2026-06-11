@@ -67,6 +67,35 @@ body {
   color: var(--muted);
 }
 
+.section-nav {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.section-nav a {
+  text-decoration: none;
+  color: #0f172a;
+  background: #fff6db;
+  border: 1px solid #f2d39f;
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-weight: 600;
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  background: #ffe8bb;
+  border-color: #e6b15a;
+}
+
+.section-nav a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
 main {
   width: min(980px, 92vw);
   margin: 0 auto;
@@ -76,6 +105,40 @@ main {
 .gallery {
   display: grid;
   gap: 1.25rem;
+}
+
+.info-panel {
+  background: linear-gradient(145deg, #fffdf7, #fff7e6);
+  border: 1px solid #efd9b0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.info-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  color: #0f172a;
+}
+
+.info-panel p,
+.info-panel ul {
+  margin: 0;
+  color: var(--muted);
+}
+
+.info-panel ul {
+  padding-left: 1.15rem;
+}
+
+.info-panel li + li {
+  margin-top: 0.45rem;
+}
+
+#proximas-presentaciones {
+  margin-top: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .media-item {
@@ -220,6 +283,13 @@ main {
 }
 
 @media (max-width: 680px) {
+  .section-nav {
+    justify-content: flex-start;
+    width: min(520px, 92vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .media-item,
   .media-item.reverse {
     grid-template-columns: 1fr;

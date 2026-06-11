@@ -4,6 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A. Coelac - Galeria de Arte</title>
+    <meta
+      name="description"
+      content="Galeria de arte de Alberto Coelac con obra visual inspirada en naturaleza y ciudad, trayectoria artistica y proximas presentaciones."
+    />
+    <link rel="canonical" href="https://acoelac.art/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="A. Coelac - Galeria de Arte" />
+    <meta
+      property="og:description"
+      content="Explora la galeria de Alberto Coelac: fotografia artistica, trayectoria y eventos proximos."
+    />
+    <meta property="og:url" content="https://acoelac.art/" />
+    <meta property="og:image" content="https://picsum.photos/id/1011/1200/630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A. Coelac - Galeria de Arte" />
+    <meta
+      name="twitter:description"
+      content="Obra visual de Alberto Coelac entre lo natural y lo urbano."
+    />
+    <meta name="twitter:image" content="https://picsum.photos/id/1011/1200/630" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://acoelac.art/#artista",
+            "name": "Alberto Coelac",
+            "alternateName": "A. Coelac",
+            "jobTitle": "Artista visual y fotografo",
+            "description": "Artista visual enfocado en composiciones naturales y escenas urbanas.",
+            "url": "https://acoelac.art/",
+            "image": "https://picsum.photos/id/1011/800/800",
+            "knowsAbout": ["fotografia", "arte contemporaneo", "narrativa visual"]
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://acoelac.art/#galeria",
+            "name": "Galeria de Arte Alberto Coelac",
+            "inLanguage": "es",
+            "url": "https://acoelac.art/",
+            "about": { "@id": "https://acoelac.art/#artista" },
+            "hasPart": [
+              { "@id": "https://acoelac.art/#obra-sendero-verde" },
+              { "@id": "https://acoelac.art/#obra-horizonte-vivo" },
+              { "@id": "https://acoelac.art/#obra-instante-urbano" },
+              { "@id": "https://acoelac.art/#obra-reflejo-sereno" },
+              { "@id": "https://acoelac.art/#obra-contraste-creativo" }
+            ]
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://acoelac.art/#obra-sendero-verde",
+            "name": "Sendero Verde",
+            "creator": { "@id": "https://acoelac.art/#artista" },
+            "artform": "Fotografia",
+            "genre": "Paisaje natural",
+            "image": "https://picsum.photos/id/123/1200/1200"
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://acoelac.art/#obra-horizonte-vivo",
+            "name": "Horizonte Vivo",
+            "creator": { "@id": "https://acoelac.art/#artista" },
+            "artform": "Fotografia",
+            "genre": "Paisaje",
+            "image": "https://picsum.photos/id/253/1200/1200"
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://acoelac.art/#obra-instante-urbano",
+            "name": "Instante Urbano",
+            "creator": { "@id": "https://acoelac.art/#artista" },
+            "artform": "Fotografia",
+            "genre": "Documental urbano",
+            "image": "https://picsum.photos/id/232/1200/1200"
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://acoelac.art/#obra-reflejo-sereno",
+            "name": "Reflejo Sereno",
+            "creator": { "@id": "https://acoelac.art/#artista" },
+            "artform": "Fotografia",
+            "genre": "Naturaleza",
+            "image": "https://picsum.photos/id/430/1200/1200"
+          },
+          {
+            "@type": "VisualArtwork",
+            "@id": "https://acoelac.art/#obra-contraste-creativo",
+            "name": "Contraste Creativo",
+            "creator": { "@id": "https://acoelac.art/#artista" },
+            "artform": "Fotografia",
+            "genre": "Expresion visual",
+            "image": "https://picsum.photos/id/998/1200/1200"
+          },
+          {
+            "@type": "Event",
+            "@id": "https://acoelac.art/#evento-1",
+            "name": "Muestra Luz y Ciudad",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "startDate": "2026-08-14T19:30:00-05:00",
+            "endDate": "2026-08-14T22:00:00-05:00",
+            "location": {
+              "@type": "Place",
+              "name": "Casa Cultural Miraflores",
+              "address": "Avenida Principal 224, Miraflores"
+            },
+            "performer": { "@id": "https://acoelac.art/#artista" }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://acoelac.art/#evento-2",
+            "name": "Conversatorio Miradas del Entorno",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+            "startDate": "2026-10-02T18:00:00-05:00",
+            "endDate": "2026-10-02T20:00:00-05:00",
+            "location": {
+              "@type": "Place",
+              "name": "Centro de Arte del Puerto",
+              "address": "Malecon Cultural 18"
+            },
+            "performer": { "@id": "https://acoelac.art/#artista" }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://acoelac.art/#evento-3",
+            "name": "Taller abierto Componer con luz",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "startDate": "2026-11-22T11:00:00-05:00",
+            "endDate": "2026-11-22T13:00:00-05:00",
+            "location": {
+              "@type": "Place",
+              "name": "Laboratorio Visual Centro Historico",
+              "address": "Pasaje de los Murales 41"
+            },
+            "performer": { "@id": "https://acoelac.art/#artista" }
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,9 +158,32 @@
       <p>
         Una colección visual con artística con énfasis en lo natural y lo urbano.
       </p>
+      <nav class="section-nav" aria-label="Secciones principales">
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#proximas-presentaciones">Proximas presentaciones</a>
+      </nav>
     </header>
 
     <main id="contenido-principal" tabindex="-1">
+      <section id="sobre-mi" class="info-panel" aria-labelledby="titulo-sobre-mi">
+        <h2 id="titulo-sobre-mi">Sobre mi</h2>
+        <p>
+          Soy Alberto Coelac, artista visual y fotografo. Mi trabajo une escenas
+          naturales y urbanas para contar historias cotidianas con una mirada
+          sensible y contrastes de luz.
+        </p>
+      </section>
+
+      <section id="trayectoria" class="info-panel" aria-labelledby="titulo-trayectoria">
+        <h2 id="titulo-trayectoria">Trayectoria</h2>
+        <ul>
+          <li>2018: Primera exposicion colectiva "Fragmentos de Ciudad" en Lima.</li>
+          <li>2021: Serie "Respirar Verde" publicada en revista cultural regional.</li>
+          <li>2024: Residencia artistica enfocada en narrativa fotografica documental.</li>
+        </ul>
+      </section>
+
       <section class="gallery" aria-labelledby="titulo-galeria">
         <h2 id="titulo-galeria" class="sr-only">Galeria principal de imagenes</h2>
 
@@ -171,6 +338,19 @@
             <a class="close-btn" href="#" aria-label="Cerrar">Cerrar</a>
           </div>
         </article>
+      </section>
+
+      <section
+        id="proximas-presentaciones"
+        class="info-panel"
+        aria-labelledby="titulo-proximas-presentaciones"
+      >
+        <h2 id="titulo-proximas-presentaciones">Proximas presentaciones</h2>
+        <ul>
+          <li>14 de agosto 2026, 7:30 p. m. - Muestra "Luz y Ciudad".</li>
+          <li>2 de octubre 2026, 6:00 p. m. - Conversatorio "Miradas del Entorno".</li>
+          <li>22 de noviembre 2026, 11:00 a. m. - Taller abierto "Componer con luz".</li>
+        </ul>
       </section>
     </main>
 
